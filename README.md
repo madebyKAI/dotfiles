@@ -1,3 +1,3 @@
 # dotfiles
 
-Im a noob to all of this.
+I'm a noob to all of this.
