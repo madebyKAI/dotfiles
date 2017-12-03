@@ -1,0 +1,82 @@
+*.font: xft:Overpass Mono:size=10,xft:PowerlineSymbols:size=10
+
+Xft.dpi:                        96
+Xft.antialias:                  1
+Xft.autohint:                   1
+Xft.hinting:                    1
+Xft.hintstyle:                  hintslight
+Xft.lcdfilter:                  lcdlight
+Xft.rgba:                       rgb
+
+URxvt*termName:                 xterm-256color
+URxvt.depth:                    32
+URxvt*lineSpace:                1
+URxvt.letterSpace:              -1
+URxvt.iso14755:                 false
+URxvt.iso14755_52:              false
+URxvt*geometry:                 65x17
+URxvt.scrollBar:                false
+URxvt*loginShell:               true
+URxvt.internalBorder:           25
+URxvt.perl-ext:	 		default,matcher
+URxvt.url-launcher:             firefox
+URxvt.matcher.button: 		1
+URxvt.perl-ext-common: macosx-clipboard
+URxvt*keysym.M-c: perl:macosx-clipboard:copy
+URxvt*keysym.M-v: perl:macosx-clipboard:paste
+URxvt*font: xft:Inconsolata\ For\ Powerline:size=11
+
+! special
+*.foreground:   #c0c5ce
+*.background:   #2b303b
+*.cursorColor:  #c0c5ce
+
+! black
+*.color0:       #2b303b
+*.color8:       #65737e
+
+! red
+*.color1:       #bf616a
+*.color9:       #bf616a
+
+! green
+*.color2:       #a3be8c
+*.color10:      #a3be8c
+
+! yellow
+*.color3:       #ebcb8b
+*.color11:      #ebcb8b
+
+! blue
+*.color4:       #8fa1b3
+*.color12:      #8fa1b3
+
+! magenta
+*.color5:       #b48ead
+*.color13:      #b48ead
+
+! cyan
+*.color6:       #96b5b4
+*.color14:      #96b5b4
+
+! white
+*.color7:       #c0c5ce
+*.color15:      #eff1f5
+
+rofi.color-enabled: true
+rofi.color-window: argb:ee292f37, argb:0292f37, #259E83
+rofi.color-normal: argb:2000000, #ffffff, argb:2000000, argb:2000000, #259E83
+rofi.color-active: argb:2000000, #ffffff, argb:2000000, argb:2000000, #ffffff
+rofi.color-urgent: argb:2000000, #ffffff, argb:2000000, argb:2000000, #ffffff
+
+rofi.font: Overpass 20
+rofi.eh: 1
+rofi.line-margin: 30
+rofi.separator-style: solid
+rofi.hide-scrollbar: true
+rofi.lines: 3
+rofi.width: 100
+rofi.padding: 400
+rofi.bw: 0
+rofi.auto-select: true
+rofi.opacity: 85

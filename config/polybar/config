@@ -1,0 +1,129 @@
+[bar/bar]
+font-1 = "FontAwesome:pixelsize=12;0"
+font-0 = "Overpass Mono:pixelsize=10;2.25"
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+fixed-center = true
+
+width = 100%
+height = 30
+
+background = #1d1f21
+foreground = #707880
+
+radius = 0.0
+
+# line-size = 1
+# line-color = #f00
+
+# border-size = 2
+# border-color = #00ff00
+padding-left = 1
+padding-right = 1
+module-margin = 0
+
+modules-left = i3 
+modules-center = date
+modules-right = battery separator cpu separator memory
+
+[module/i3]
+
+; strip-wsnumbers = true
+type = internal/i3
+format = <label-state> <label-mode>
+
+ws-icon-0 = 1. ;
+ws-icon-1 = 2. ;
+ws-icon-2 = 3. ;
+ws-icon-3 = 4. ;
+ws-icon-4 = 5. ;
+ws-icon-5 = 6. ;
+ws-icon-6 = 7. ;
+ws-icon-7 = 8. ;
+ws-icon-8 = 9. ;
+ws-icon-9 = 10. ;
+
+label-focused = %icon%
+label-focused-foreground = #cc6666
+label-focused-background = #242629
+label-focused-underline = #fba922
+label-focused-padding = 1
+
+label-unfocused = %icon%
+label-unfocused-padding = 1
+
+label-visible = %icon%
+label-visible-underline = #555555
+label-visible-padding = 1
+
+label-urgent = %icon%
+label-urgent-foreground = #000000
+label-urgent-background = #bd2c40
+label-urgent-padding = 1
+
+
+[module/date]
+type = internal/date
+interval = 1.0
+date = %A, %d %B %I:%M %p
+
+# [module/github]
+# type = internal/github
+
+# ; Accessing an access token stored in file
+# token = ${file:/path/to/file/containing/github/access.token}
+
+# ; Accessing an access token stored in an environment variable
+# token = ${env:GITHUB_ACCESS_TOKEN}
+
+# ; Whether empty notifications should be displayed or not
+# empty-notifications = false
+
+[module/title]
+type = internal/xwindow
+# format-background = #f00
+format-foreground = #f0c674
+format-padding = 1
+label-maxlen = 50
+
+[module/battery]
+type = internal/battery
+
+; This is useful in case the battery never reports 100% charge
+full-at = 99
+
+; Use the following command to list batteries and adapters:
+; $ ls -1 /sys/class/power_supply/
+battery = BAT0
+adapter = ADP1
+
+; If an inotify event haven't been reported in this many
+; seconds, manually poll for new values.
+;
+; Needed as a fallback for systems that don't report events
+; on sysfs/procfs.
+;
+; Disable polling by setting the interval to 0.
+;
+; Default: 5
+poll-interval = 5
+
+[module/cpu]
+type = internal/cpu
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 0.5
+label = CPU: %percentage%%
+
+[module/separator]
+type = custom/text
+content = " | "
+
+[module/memory]
+type = internal/memory
+interval = 2
+;format-underline = #4bffdc
+label = %gb_used% used 
